@@ -17,7 +17,7 @@ class School
   end
     
   def sort
-    roster.collect { |k,v| (k, v.sort) }
+    roster.each_value { |v| v.sort! }
   end
     
 end
